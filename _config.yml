@@ -1,0 +1,76 @@
+# Jekyll configuration
+
+name: 'b0tch_sec'
+description: '
+<h1>Botch</h1>
+<strong>verb</strong> - carry out a task badly or carelessly <br /> 
+<strong>noun</strong> - a bungled or badly carried out task or action. <br /><br />
+<h1>Security</h1>
+<strong>noun</strong> - the state of being free from danger or threat <br />
+<strong>noun (2)</strong> - Something you probably botched.
+'
+url: http://b0tchsec.com
+static: https://static.b0tchsec.com
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: ''
+
+# This can be '' to hide the Github nav button
+github: 'b0tchsec/'
+
+# Set this to your UA-# value, or '' to disable the block completely
+gaaccount: ''
+
+# The 'comments' setting enables comments. You'll need to select either
+# disqus or isso below to choose a comment system. Individual posts can
+# override 'comments' to disable on a post-by-post basis.
+comments: true
+
+# Set this to your public isso URL to enable comments via isso. Set to '' to disable isso.
+isso: ''
+
+# Set this to your disqus shortname to enable comments via disqus. Set to '' to disable disqus.
+disqus: ''
+
+permalink: /:categories/:title
+paginate: 3
+
+highlighter: rouge
+markdown: kramdown
+gems: ['jekyll-paginate', 'jekyll-sitemap']
+
+exclude: ['README.md', 'LICENSE']
+
+author_ids: [aaron, adam, dade]
+authors:
+  aaron:
+    display_name: Aaron Gallagher
+    gravatar:
+    email:
+    web: http://aagallag.com/
+    twitter:
+    github: aagallag
+    keybase: aagallag
+    bio: "These are dank times man. Dank times indeed."
+  adam:
+    display_name: Adam Jacques
+    gravatar:
+    email: adam@adamjacques.com
+    web: http://ajacqu.es/
+    twitter: rubyonnails
+    github: ajacques
+    keybase: adamjacques
+    bio: "But how can we integrate docker into this stack?"
+  dade:
+    display_name: dade
+    gravatar:
+    email: dade@tutanota.com
+    web: http://0xda.de
+    twitter: "0xdade"
+    keybase: dade
+    github: "0xdade"
+    bio: "But do we <strong>NEED</strong> to integrate docker in this stack? <br /><br />CTF Team member, I like to solve web challenges and forensics challenges. I'm terrible at reversing/pwning challenges. I do tend to know a lot of hacker trivia which sometimes helps."
+
+years: ['2016']

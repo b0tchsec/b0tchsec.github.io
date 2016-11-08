@@ -1,0 +1,12 @@
+---
+layout: default
+title: ASIS CTF Quals 2016
+category: asis
+---
+<div class="well">
+<h1>Posts from {{ page.title }}</h1>
+{%for post in site.categories.asis %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>

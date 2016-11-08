@@ -1,0 +1,16 @@
+{% if jekyll.environment == 'production' %}
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.b0tchsec.com"]);
+  _paq.push(["setDomains", ["*.b0tchsec.com","*.b0tchsec.github.io"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://static.b0tchsec.com/";
+    _paq.push(['setTrackerUrl', u+'metrics']);
+    _paq.push(['setSiteId', 7]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'metrics.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+{% endif %}

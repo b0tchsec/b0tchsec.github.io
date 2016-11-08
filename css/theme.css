@@ -1,0 +1,95 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #696969;
+}
+
+.copyright {
+    color: #333;
+}
+.copyright-container {
+    text-align:center;
+}
+.footer {
+    text-align: center;
+}
+.footer p {
+    color:#eee;
+}
+.footer a {
+    color: #ee4444;
+}
+
+.sidebar h1 {
+    color: #ee4444;
+    font-size: 1.3em;
+}
+
+.sidebar a {
+    color: #428bca;
+}
+
+.sidebar li {
+    margin-top: .7em;
+    line-height: 1em;
+}
+
+.sidebar a:hover {
+    color: #3071a9;
+}
+
+.container-left {
+    margin: 0;
+}
+
+.well h1 {
+    color: #ee4444;
+    font-size: 1.3em;
+}
+
+.author {
+    color: #0033FF;
+    font-style:oblique;
+    margin-top:0;
+    margin-bottom:0;
+}
+.meta {
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:0;
+}
+.author a {
+    color: #ee4444;
+}
+
+.post-content {
+    margin-top:1em;
+}
+
+
+/* This stuff was all set for the author pages */
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #333;
+}
+h2.author-header {
+    color: #333;
+}
+h2.category-year {
+    font-size:1.75em;
+}
+ul.category-list {
+    list-style-type:none;
+}
+li.category-name {
+    font-size:1.25em;
+}
+ul.authored-posts {
+    list-style-type:none;
+}
+ul.authored-posts li {
+    margin-top:.25em;
+    margin-bottom:.25em;
+}

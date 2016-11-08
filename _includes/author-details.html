@@ -1,0 +1,50 @@
+{% assign author = site.authors[page.author] %}
+	<h2 class="author-header">{{author.display_name}}</h2>
+	<p>{{ author.bio }}</p>
+	{% if author.github %}
+	<p>Fork me, clone me, push me, pull me @ <a href="https://github.com/{{author.github}}">github.com/{{ author.github }}</a></p>
+	{% endif %}
+	{% if author.twitter %}
+	<p>Follow me <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a></p>
+	{% endif %}
+	{% if author.keybase %}
+	<p>Track me on Keybase: <a href="https://keybase.io/{{author.keybase}}">{{author.keybase}}</a></p>
+	<p>You can also use my <a href="https://keybase.io/{{author.keybase}}/key.asc">pubkey</a> to encrypt messages to me.</p>
+	{% endif %}
+	{% if author.web %}
+	<p>I also have a <a href="{{author.web}}">personal website.</a></p>
+	{% endif %}
+
+	<h1 class="authored-posts-header">Authored Posts</h1>
+	<hr>
+	{% for year in site.years %}
+	{% assign yearsCategories = yearsCategories | split: "|" %}
+	<h2 class="category-year">{{ year }}</h2>
+		{% for post in site.posts %}
+			{% if post.categories[0] == year %}
+				{% if yearsCategories contains post.categories[1] %}
+					{% continue %}
+				{% endif %}
+				{% assign yearsCategories = yearsCategories | push: post.categories[1] %}
+			{% endif %}
+		{% endfor %}
+		{% for cat in yearsCategories %}
+			<ul class="category-list">
+			{% assign postPresent = 0 %}
+			{% for post in site.categories[cat] %}
+				{% if post.author == page.author %}
+					{% if postPresent != 1 %}
+						<li class="category-name">{{ cat }}</li>
+						<ul class="authored-posts">
+					{% endif %}
+					{% assign postPresent = 1 %}
+					<li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+					
+				{% endif %}
+			{% endfor %}
+				{% if postPresent == 1 %}
+					</ul>
+				{% endif %}
+				</ul>
+		{% endfor %}
+	{% endfor %}

@@ -1,0 +1,9 @@
+web:
+  image: jekyll/jekyll:latest
+  volumes:
+    - .:/srv/jekyll
+  environment:
+    VIRTUAL_HOST: b0tchsec.devvm
+    VIRTUAL_PORT: 4000
+  ports:
+    - 4000

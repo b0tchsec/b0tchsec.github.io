@@ -1,0 +1,33 @@
+<div class="sidebar well">
+{{ site.description }}
+</div>
+<div class="sidebar well">
+    <h1>2016 CTFs</h1>
+    <ul>
+        {% for cat in site.categories %}
+        	{% if site.years contains cat[0] %}
+        		{% continue %}
+        	{% endif %}
+          <li><a href="{{ site.baseurl}}/2016/{{ cat[0] }}">{{ cat[0] | upcase }}</a></li>
+        	
+        {% endfor %}
+    </ul>
+</div>
+<div class="sidebar well">
+    <h1>Recent Posts</h1>
+    <ul>
+        {% for post in site.posts limit:5 %}
+          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="sidebar well">
+{% include links-list.html %}
+</div>
+
+<div class="sidebar well copyright-container">
+<p class="copyright">&copy;{{ site.time | date: '%Y' }} {{ site.name }}.<br />
+Powered by <a href="http://jekyllrb.com">Jekyll</a><br />
+Theme by <a href="https://github.com/scotte/jekyll-clean">Scott Emmons</a> under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a></p>
+</div>

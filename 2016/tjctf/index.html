@@ -1,0 +1,12 @@
+---
+layout: default
+title: TJCTF 2016
+category: tjctf
+---
+<div class="well">
+<h1>Posts from {{ page.title }}</h1>
+{%for post in site.categories.tjctf %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>

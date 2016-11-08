@@ -1,0 +1,21 @@
+---
+layout: default
+title: Team
+comments: false
+---
+
+<div class="well">
+    <h1>About us</h1>
+    {% for author_id in site.author_ids %}
+        {% assign author = site.authors[author_id] %}
+    <div id="{{ author_id }}">
+    	<h2><a href="{{author_id}}">{{ author.display_name }}</a></h2>
+    	<p>{{ author.bio }}</p>
+    	{% if author.twitter %}
+    	<p>Follow me <a href="https://twitter.com/{{author.twitter}}">@{{ author.twitter }}</a></p>
+    	{% endif %}
+    </div>
+
+    {% endfor %}
+
+</div>
