@@ -67,10 +67,10 @@ authors:
     display_name: dade
     gravatar:
     email: dade@tutanota.com
-    web: http://0xda.de
+    web: https://0xda.de
     twitter: "0xdade"
     keybase: dade
     github: "0xdade"
-    bio: "But do we <strong>NEED</strong> to integrate docker in this stack? <br /><br />CTF Team member, I like to solve web challenges and forensics challenges. I'm terrible at reversing/pwning challenges. I do tend to know a lot of hacker trivia which sometimes helps."
+    bio: "I like web and forensics challenges. I'm terrible at reversing/pwning challenges. I do tend to know a lot of hacker trivia which sometimes helps. I also enjoy archiving things, you can frequently find me kicking around the #datahoarder irc channel on freenode."
 
 years: ['2016']
