@@ -46,7 +46,7 @@ exclude: ['README.md', 'LICENSE']
 author_ids: [aaron, adam, dade]
 authors:
   aaron:
-    display_name: Aaron Gallagher
+    display_name: Aaron
     gravatar:
     email:
     web: http://aagallag.com/
@@ -55,7 +55,7 @@ authors:
     keybase: aagallag
     bio: "These are dank times man. Dank times indeed."
   adam:
-    display_name: Adam Jacques
+    display_name: Adam
     gravatar:
     email: adam@adamjacques.com
     web: http://ajacqu.es/
