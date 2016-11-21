@@ -3,7 +3,7 @@ layout: post
 title: "RC3 CTF : Just Joking, Joker Joked"
 author: dade
 date: 2016-11-20 13:37:57 -0700
-slug: bork-bork
+slug: just-joking
 category:
 - 2016
 - rc3ctf
