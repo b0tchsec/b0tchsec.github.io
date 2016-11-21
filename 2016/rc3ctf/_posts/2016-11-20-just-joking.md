@@ -70,7 +70,7 @@ Looking at the CCNs.secrets table, we see some hashes. Let's try to crack (https
 
 Again, how annoying.
 
-!(https://i.ytimg.com/vi/ZZ81_Wkykfo/hqdefault.jpg)
+![Two hours later...](https://i.ytimg.com/vi/ZZ81_Wkykfo/hqdefault.jpg)
 
 Let's see if any online databases have the other hashes.
 
