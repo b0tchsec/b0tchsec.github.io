@@ -1,0 +1,12 @@
+---
+layout: default
+title: RC3 CTF 2016
+category: rc3ctf
+---
+<div class="well">
+<h1>Posts from {{ page.title }}</h1>
+{%for post in site.categories.rc3ctf %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
