@@ -65,7 +65,7 @@ authors:
     bio: "But how can we integrate docker into this stack?"
   dade:
     display_name: dade
-    gravatar:
+    gravatar: dade@tutanota.com
     email: dade@tutanota.com
     web: https://0xda.de
     twitter: "0xdade"
@@ -73,4 +73,4 @@ authors:
     github: "0xdade"
     bio: "I like web and forensics challenges. I'm terrible at reversing/pwning challenges. I do tend to know a lot of hacker trivia which sometimes helps. I also enjoy archiving things, you can frequently find me kicking around the #datahoarder irc channel on freenode."
 
-years: ['2016']
+years: ['2016', '2017']

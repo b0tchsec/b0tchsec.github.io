@@ -2,18 +2,6 @@
 {{ site.description }}
 </div>
 <div class="sidebar well">
-    <h1>2016 CTFs</h1>
-    <ul>
-        {% for cat in site.categories %}
-        	{% if site.years contains cat[0] %}
-        		{% continue %}
-        	{% endif %}
-          <li><a href="{{ site.baseurl}}/2016/{{ cat[0] }}">{{ cat[0] | upcase }}</a></li>
-        	
-        {% endfor %}
-    </ul>
-</div>
-<div class="sidebar well">
     <h1>Recent Posts</h1>
     <ul>
         {% for post in site.posts limit:5 %}
