@@ -3,7 +3,7 @@ layout: post
 title: "TJCTF 2016: Torrent"
 date: 2016-05-31 11:12:45 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: torrent
 category:
 - 2016

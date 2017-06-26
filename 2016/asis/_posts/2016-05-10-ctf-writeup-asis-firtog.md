@@ -3,7 +3,7 @@ layout: post
 title: "ASIS CTF Quals 2016: firtog"
 date: 2016-05-10 08:59:06 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: firtog
 category:
 - 2016

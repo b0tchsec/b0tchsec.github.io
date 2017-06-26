@@ -43,14 +43,14 @@ gems: ['jekyll-paginate', 'jekyll-sitemap']
 
 exclude: ['README.md', 'LICENSE']
 
-author_ids: [aaron, adam, dade]
+author_ids: [aagallag, adam, dade]
 authors:
-  aaron:
-    display_name: Aaron
+  aagallag:
+    display_name: aagallag
     gravatar:
     email:
     web: http://aagallag.com/
-    twitter:
+    twitter: aagallag
     github: aagallag
     keybase: aagallag
     bio: "These are dank times man. Dank times indeed."

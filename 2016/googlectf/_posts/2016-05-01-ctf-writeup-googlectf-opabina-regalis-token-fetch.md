@@ -3,7 +3,7 @@ layout: post
 title: "Google CTF 2016 : Opabina Regalis - Token Fetch"
 date: 2016-05-01 15:25:06 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: opabina-regalis-token-fetch
 category:
 - 2016

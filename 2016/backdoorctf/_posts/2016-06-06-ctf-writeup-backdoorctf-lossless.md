@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "backdoorctf16 : Lossless"
-author: aaron
+author: aagallag
 date: 2016-06-06 16:50:00 -0700
 category:
 - 2016

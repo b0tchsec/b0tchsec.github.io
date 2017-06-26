@@ -3,7 +3,7 @@ layout: post
 title: "Google CTF 2016 : Spotted Quoll"
 date: 2016-05-01 16:25:06 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: spotted-quoll
 category:
 - 2016

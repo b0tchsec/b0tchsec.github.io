@@ -3,7 +3,7 @@ layout: post
 title: "Google CTF 2016 : For2"
 date: 2016-05-01 17:25:06 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: for2
 category:
 - 2016

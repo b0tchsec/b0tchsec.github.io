@@ -3,7 +3,7 @@ layout: post
 title: "TU CTF 2016: The Nack"
 date: 2016-05-20 06:42:06 -0700
 comments: true
-author: aaron
+author: aagallag
 slug: the-nack
 category:
 - 2016
