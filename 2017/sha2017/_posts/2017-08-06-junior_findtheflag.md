@@ -16,12 +16,9 @@ category:
 **Description:**
 
 ```
-Find The Flag (1) - 276 solves
 There is a flag hidden in this binary. Can you find it?
 
-findtheflag
-
-06b09333154289204c50224c700a456a
+findtheflag - 06b09333154289204c50224c700a456a
 ```
 
 The flag was simply contained in the binary as a string, no assembly required.
