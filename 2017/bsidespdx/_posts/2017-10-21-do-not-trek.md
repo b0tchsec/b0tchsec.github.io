@@ -21,6 +21,9 @@ host: a9a4a876db2d711e7887102abc71843c-387472393.eu-central-1.elb.amazonaws.com
 
 ```
 
+# Note
+The BSidesPDX organizers have made the source code for all of their challenges freely available so that you can run them at home and follow along. You can find more information [here](https://github.com/BSidesPDX/CTF-2017).
+
 # Investigation
 Upon loading the host, we see a flying spaceship Enterprise, with some marqueeing text that says "Do not track is 0!" Since Do Not Track is a common HTTP header you can send websites to ask not to be tracked, we know the web app must be reflecting our value back to us in some regard. The first step I took was to see if I could evaluate math in the `DNT` header. I fired up burp and set it to intercept requests, then reloaded the page. 
 
