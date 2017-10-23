@@ -1,0 +1,12 @@
+---
+layout: default
+title: BSidesPDX 2017 CTF
+category: bsidespdx
+---
+<div class="well">
+<h1>Posts from {{ page.title }}</h1>
+{%for post in site.categories.bsidespdx %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
