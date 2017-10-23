@@ -29,7 +29,7 @@ Upon loading the host, we see a flying spaceship Enterprise, with some marqueein
 
 When the intercept came up, I changed `DNT: 0` to `DNT: 1+1`. Lo and behold, the page reflected `Do not track is 2!` Next I tried to inject some other stuff and see what else was allowed. By modifying the DNT header to read `DNT: globals()` I was able to confirm that python was getting evaluated in the header.
 
-From here I decided to have a look at the filesystem so I intercepted another request and set it to `DNT: __builtins__.__import__('subprocess').check_output(["la", "-la"])` which yielded the contents of the current directory into the page. From here I could see that there was a file named flag.
+From here I decided to have a look at the filesystem so I intercepted another request and set it to `DNT: __builtins__.__import__('subprocess').check_output(["ls", "-la"])` which yielded the contents of the current directory into the page. From here I could see that there was a file named flag.
 
 # Solution
 Create or intercept an http request to the challenge host and set the DNT flag to:
