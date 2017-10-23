@@ -22,7 +22,9 @@ host: a9a4a876db2d711e7887102abc71843c-387472393.eu-central-1.elb.amazonaws.com
 ```
 
 # Investigation
-Upon loading the host, we see a flying spaceship Enterprise, with some marqueeing text that says "Do not track is 0!" Since Do Not Track is a common HTTP header you can send websites to ask not to be tracked, we know the web app must be reflecting our value back to us in some regard. The first step I took was to see if I could evaluate math in the `DNT` header. I fired up burp and set it to intercept requests, then reloaded the page. When the intercept came up, I changed `DNT: 0` to `DNT: 1+1`. Lo and behold, the page reflected `Do not track is 2!` Next I tried to inject some other stuff and see what else was allowed. By modifying the `DNT` header to read `DNT: globals()` I was able to confirm that python was getting evaluated in the header.
+Upon loading the host, we see a flying spaceship Enterprise, with some marqueeing text that says "Do not track is 0!" Since Do Not Track is a common HTTP header you can send websites to ask not to be tracked, we know the web app must be reflecting our value back to us in some regard. The first step I took was to see if I could evaluate math in the `DNT` header. I fired up burp and set it to intercept requests, then reloaded the page. 
+
+When the intercept came up, I changed `DNT: 0` to `DNT: 1+1`. Lo and behold, the page reflected `Do not track is 2!` Next I tried to inject some other stuff and see what else was allowed. By modifying the DNT header to read `DNT: globals()` I was able to confirm that python was getting evaluated in the header.
 
 From here I decided to have a look at the filesystem so I intercepted another request and set it to `DNT: __builtins__.__import__('subprocess').check_output(["la", "-la"])` which yielded the contents of the current directory into the page. From here I could see that there was a file named flag.
 
