@@ -19,7 +19,7 @@ Do the needful
 https://scoreboard.openctf.com/DoTheNeedful-98e4c6ba71f88e4201a08e7503b0df6124607e39
 ```
 
-**File Download:** [tinytetris-2c5414f1f85397e1787ec31cca3f252ac5fb78a6](https://aagallag.com/files/ctf_files/openctf/DoTheNeedful-98e4c6ba71f88e4201a08e7503b0df6124607e39)
+**File Download:** [DoTheNeedful-98e4c6ba71f88e4201a08e7503b0df6124607e39](https://aagallag.com/files/ctf_files/openctf/DoTheNeedful-98e4c6ba71f88e4201a08e7503b0df6124607e39)
 
 When we extract this file, we end up with `Challenge.txt`.  So I go ahead and cat it.
 
