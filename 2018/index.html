@@ -1,0 +1,23 @@
+---
+layout: default
+title: Posts from 2018
+category: 2018
+---
+<div class="well">
+{%for post in site.categories.2018 %}
+    {% unless post.next %}
+        <h1>{{ post.date | date: '%Y' }}</h1>
+        <ul>
+    {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+            </ul>
+            <h1>{{ post.date | date: '%Y' }}</h1>
+            <ul>
+        {% endif %}
+    {% endunless %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>

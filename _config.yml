@@ -43,7 +43,7 @@ gems: ['jekyll-paginate', 'jekyll-sitemap']
 
 exclude: ['README.md', 'LICENSE']
 
-author_ids: [aagallag, adam, dade]
+author_ids: [aagallag, adam, dade, fl0rbu5]
 authors:
   aagallag:
     display_name: aagallag
@@ -72,5 +72,14 @@ authors:
     keybase: dade
     github: "0xdade"
     bio: "I like web and forensics challenges. I'm terrible at reversing/pwning challenges. I do tend to know a lot of hacker trivia which sometimes helps. I also enjoy archiving things, you can frequently find me kicking around the #datahoarder irc channel on freenode."
+  fl0rbu5:
+    display_name: fl0rbu5
+    gravatar:
+    email:
+    web:
+    twitter:
+    github: Sheepwiz
+    keybase:
+    bio: "// TODO"
 
-years: ['2016', '2017']
+years: ['2016', '2017', '2018']
