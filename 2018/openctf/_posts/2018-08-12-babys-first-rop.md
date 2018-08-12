@@ -69,7 +69,7 @@ Now to convert this raw dump into a readable, searchable format, I used `objdump
 objdump -D -b binary -m i386 gadgets.raw > gadgets_objdump.txt
 ```
 
-NOTE: I initially tried to use x86-64 for the option for '-m', but that was throwing an error.  Since x86-64 is backwards compatible with x86 (i386), I figured this shouldn't be a problem.  An example of this output can be seen below:
+**NOTE:** I initially tried to use x86-64 for the option for '-m', but that was throwing an error.  Since x86-64 is backwards compatible with x86 (i386), I figured this shouldn't be a problem.  An example of this output can be seen below:
 
 ```
 
