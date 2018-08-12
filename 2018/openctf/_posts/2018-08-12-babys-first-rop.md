@@ -8,7 +8,7 @@ category:
 - 2018
 - openctf
 ---
-**Category:** Binary,Reverse
+**Category:** Binary/Reverse
 
 **Points:** 100
 
@@ -57,7 +57,7 @@ This alarm call causes the program to crash after 30 seconds.  This isn't a lot 
 
 ## Gadget Hunting
 
-Admitadedly, I didn't do a ton of reversing on this one.  I knew I still needed to find gadgets for this challenge, so I started looking for how I might find these.  It didn't take long for me to notice this loop in the assembly.
+Admittedly, I didn't do a ton of reversing on this one.  I knew I still needed to find gadgets for this challenge, so I started looking for how I might find these.  It didn't take long for me to notice this loop in the assembly.
 
 <img src="https://i.imgur.com/xUVcAYp.png" class="img-responsive"/>
 
