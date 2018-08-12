@@ -146,7 +146,7 @@ And memory locations:
 
 And as I mentioned above, `rdi` is already pointing to the beginning of my payload, which is now `/bin/sh\x00`.  So we need a gadget for setting the following registers, `rax`, `rsi`, and `rdx`, and of course, the syscall gadget.
 
-The `pop` instruction will be the easiest for us, so I simply grepped the text dump for pop.  Since we decoded the instructions as x86, we'll be looking for the x86 registers.  There are duplicates, but these wre the ones I happend to grab:
+The `pop` instruction will be the easiest for us, so I simply grepped the text dump for pop.  Since we decoded the instructions as x86, we'll be looking for the x86 registers.  There are duplicates, but these were the ones I happend to grab:
 
 ```
 GADGETS_BASE    = 0x601080
