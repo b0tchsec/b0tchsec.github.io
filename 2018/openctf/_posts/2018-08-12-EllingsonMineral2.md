@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Ellingson Mineral 2"
+title: "OpenCTF : Ellingson Mineral 2"
 author: Fl0rbu5
 date: 2018-08-12 2:37:59 -0700
-slug: OSINT
+slug: ellingsonmineral2
 category:
 - 2018
 - openctf
 ---
-**Category:** 
-OSINT
+**Category:** OSINT
+
 **Points:** 100
 
 **Description:** 
