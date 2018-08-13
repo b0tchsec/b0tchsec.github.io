@@ -17,7 +17,7 @@
 
 	<h1 class="authored-posts-header">Authored Posts</h1>
 	<hr>
-	{% for year in site.years %}
+	{% for year in site.years reversed %}
 	{% assign yearsCategories = yearsCategories | split: "|" %}
 	<h2 class="category-year">{{ year }}</h2>
 		{% for post in site.posts %}
