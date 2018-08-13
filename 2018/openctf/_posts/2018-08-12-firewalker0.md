@@ -3,7 +3,7 @@ layout: post
 title: "OpenCTF : fire walker 0"
 author: aagallag
 date: 2018-08-12 9:54:00 -0700
-slug: headon
+slug: firewalker0
 category:
 - 2018
 - openctf
