@@ -28,7 +28,7 @@ $ cat Challenge.txt
 =AAAAMjU/o7Z+0V17r06KDNmaZHQB1VSlR7wsTDuNk1ok3wfRPMl5YAAV/DwDzAIAERyH3wAAsVVGNBAIs4H
 ```
 
-This looks like a base64 string, however, with base64 encoding, the `=` character is used as padding and should only show up at the end of a base64 string, if at all.  So let's try and regerse the string.  I wrote a quick Python script for this, and write the result to a file.
+This looks like a base64 string, however, with base64 encoding, the `=` character is used as padding and should only show up at the end of a base64 string, if at all.  So let's try and reverse the string.  I wrote a quick Python script for this, and write the result to a file.
 
 ```
 from base64 import b64decode
