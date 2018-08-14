@@ -30,7 +30,7 @@ $ cat Challenge.txt
 
 This looks like a base64 string, however, with base64 encoding, the `=` character is used as padding and should only show up at the end of a base64 string, if at all.  So let's try and reverse the string.  I wrote a quick Python script for this, and write the result to a file.
 
-```
+```python
 from base64 import b64decode
 
 # Read the file
@@ -71,16 +71,12 @@ $ cat b64_decode
 466c61677b6577373332386866386573676839663233677d0a
 ```
 
-Hmm, looks like hex encoding.  I just run a few lines in the Python interpreter to decode this.
+Hmm, looks like hex encoding.  I just run a simple one-liner in the Python interpreter to decode this.
 
-```
->>> data = '466c61677b6577373332386866386573676839663233677d0a'
->>> data = data.decode('hex')
->>> data
+```python
+>>> '466c61677b6577373332386866386573676839663233677d0a'.decode('hex')
 'Flag{ew7328hf8esgh9f23g}\n'
 ```
-
-
 
 # Flag
 **Flag{ew7328hf8esgh9f23g}**
